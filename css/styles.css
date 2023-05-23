@@ -140,6 +140,7 @@ body {
   top: 16px;
   left: 6px;
   padding-top: 30px;
+  z-index: 2;
 }
 
 .navigation-catalog-item:hover {
@@ -1089,8 +1090,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 1170px;
 }
 
 .catalog-item::after {
