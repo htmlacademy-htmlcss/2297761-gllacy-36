@@ -1554,6 +1554,10 @@ body {
   display: block;
 }
 
+.form-label-icon {
+  position: relative;
+  padding-left: 16px;
+}
 .tooltip-toggle:hover .tooltip-icon {
   opacity: 0.3;
 }
@@ -1567,14 +1571,19 @@ body {
   text-transform: none;
   padding: 10px 8px;
   border-radius: 1px;
-  display: block;
-  width: 162px;
+  width: 170px;
   box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
   border: 1px solid #b9b9b9;
   position: absolute;
   top: -7px;
   left: 24px;
   z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .delivery-submit {
