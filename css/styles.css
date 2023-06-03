@@ -458,6 +458,27 @@ body {
   line-height: 20px;
 }
 
+.search-input:hover {
+  border: 1px solid #2d3440;
+  border-radius: 4px;
+}
+
+.search-input:focus {
+  border: 2px solid #2D3440;
+  border-radius: 4px;
+  color: #2d3440;
+}
+
+.search-input:invalid {
+  border: 1px solid #EA5454;
+  border-radius: 4px;
+}
+
+.search-input:hover + .search-input:invalid {
+  border: 2px solid #ea5454;
+  border-radius: 4px;
+}
+
 .footer-phone-link {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1153,7 +1174,6 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 1170px;
-  margin-bottom: 50px;
 }
 
 .catalog-item::after {
@@ -1833,6 +1853,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .breadcrumbs-item {
   position: relative;
+  cursor: pointer;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
