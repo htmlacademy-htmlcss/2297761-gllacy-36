@@ -708,7 +708,7 @@ body {
 
 .main-container {
   display: grid;
-  gap: 80px;
+  gap: 76px;
 }
 
 .hero {
@@ -1141,9 +1141,9 @@ body {
 }
 
 .small-catalog-title {
-  margin-bottom: 59px;
+  margin-bottom: 51px;
   width: 527px;
-  padding-top: 3px;
+  padding-top: 12px;
 }
 
 .catalog-item {
@@ -1158,7 +1158,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 21px;
 }
 
 .card-wrapper {
@@ -1276,7 +1276,7 @@ body {
 }
 
 .section-description-title {
-  padding-top: 56px;
+  padding-top: 51px;
   margin-bottom: 57px;
 }
 
@@ -1410,12 +1410,16 @@ body {
 .link-blog {
   text-decoration: none;
   cursor: pointer;
-
+  padding-left: 11px;
 }
 
 .link-title {
   color: #565c66;
   margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
 }
 
 .link-title-main {
@@ -1813,6 +1817,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   top: 0;
 }
 
+.copyright {
+  margin-right: -8px;
+}
+
 .about-text {
   font-weight: 400;
   font-size: 12px;
@@ -1826,7 +1834,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .logo-htmlacademy {
-  margin-bottom: 14px;
+  margin-bottom: 7px;
 }
 
 .main-inner {
@@ -2317,7 +2325,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 16px;
   height: 16px;
   left: 134px;
-  bottom: 6px;
+  bottom: 3px;
 }
 
 .pagination::before {
