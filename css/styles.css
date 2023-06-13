@@ -220,6 +220,9 @@ body {
   background: #ff4a78;
 }
 
+.dropdown-menu-item:focus-visible {
+  background: #ff4a78;
+}
 .dropdown-menu-title {
   height: 32px;
   margin-bottom: 17px;
@@ -1182,7 +1185,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 8px;
   width: 270px;
-  height: 281px;
+  height: calc(100% - 50px);
   z-index: 1;
   top: 55px;
 }
@@ -1221,6 +1224,7 @@ body {
   margin: 0 auto;
   width: 190px;
   margin-top: 19px;
+  margin-bottom: 22px;
 }
 
 .cart-svg-wrapper {
@@ -1257,9 +1261,9 @@ body {
   border: 2px soli#ff2f6464;
 }
 
-.cart-svg-wrapper:focus {
+.cart-svg-wrapper:focus-visible {
   background: #ff2f64;
-  outline: 2px solid #2d3440;
+  border: 2px solid #2d3440;
 }
 
 .section-description {
@@ -1697,8 +1701,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 287px;
 }
 
-.delivery-submit {}
-
 .section-contacts {
   background-image: url("../images/contacts-background.jpg");
   background-repeat: no-repeat;
@@ -2035,6 +2037,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-image: url("../images/catalog/radio-disabled.svg");
 }
 
+.control-input-radio[type="radio"]:checked:focus-visible ~ .radio {
+  outline: 2px solid rgba(45, 52, 64, 1);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+/*.control-input-radio[type="radio"]:focus-visible ~ .radio {
+  outline: 2px solid rgba(45, 52, 64, 1);
+  outline-offset: 2px;
+
+}*/
+
+.control-input-radio[type="radio"]:focus-visible ~ .radio {
+  outline: 2px solid rgba(45, 52, 64, 1);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
 .checkbox {
   position: absolute;
   width: 16px;
@@ -2062,6 +2082,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .control-input:disabled + .checkbox {
   background-image: url("../images/catalog/checkbox-disabled.svg");
+}
+
+.control-input[type="checkbox"]:checked:focus-visible ~ .checkbox {
+  outline: 2px solid rgba(45, 52, 64, 1);
+  outline-offset: 2px;
+}
+
+.control-input[type="checkbox"]:focus-visible ~ .checkbox {
+  outline: 2px solid rgba(45, 52, 64, 1);
+  outline-offset: 2px;
 }
 
 .range-block {
@@ -2188,6 +2218,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .button-filter:active {
   background: rgba(252, 252, 252, 0.5);
   border-radius: 20px;
+  border-color: transparent;
 }
 
 .button-filter:focus {
@@ -2306,8 +2337,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 130px;
+  margin-bottom: 126px;
   position: relative;
+  margin-top: 50px;
 }
 
 .pagination {
@@ -2315,20 +2347,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: flex;
   position: relative;
   padding-right: 25px;
+  max-width: 145px;
+  flex-wrap: wrap;
 }
 
-.pagination::after {
+.pagination-wrapper::after {
   position: absolute;
   content: "";
-  background-image: url("../images/catalog/arrow-pagination.svg");
+  background-image: url(../images/catalog/arrow-pagination.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
-  left: 134px;
-  bottom: 3px;
+  left: 99%;
+  bottom: 13px;
 }
 
-.pagination::before {
+.pagination-wrapper::before {
   position: absolute;
   content: "";
   background-image: url("../images/catalog/arrow-pagination.svg");
@@ -2336,7 +2370,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 16px;
   height: 16px;
   right: 158px;
-  bottom: 6px;
+  bottom: 13px;
   transform: rotate(180deg);
 }
 
@@ -2347,10 +2381,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border: none;
   box-shadow: 0 4px 12px #2d34401a;
   border-radius: 26px;
-  padding: 12px 27px;
+  padding: 12px 31px;
   display: flex;
   height: 44px;
-  margin-right: 364px;
+  margin-right: 360px;
 }
 
 .pagination-current {
@@ -2380,12 +2414,4 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .pagination-link {
   text-decoration: none;
   color: #2D3440;
-}
-
-.pagination-wrapper::after {
-  position: absolute;
-  content: "";
-  border: 1px solid rgba(252, 252, 252, 0.3);
-  top: 123px;
-  width: 1170px;
 }
