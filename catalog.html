@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="icon" href="favicon.ico" type="image/ico">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
@@ -33,9 +33,6 @@
                         <li class="dropdown-menu-title">
                           <a href="#" class="dropdown-link dropdown-link-title">Новинки</a>
                         </li>
-                        <!--<li class="dropdown-menu-item">
-                          <a href="#" class="dropdown-link dropdown-link-title">Новинки</a>
-                        </li>-->
                         <li class="dropdown-menu-item">
                           <a href="catalog.html" class="dropdown-link">Сливочное</a>
                         </li>
@@ -78,7 +75,7 @@
                   </a>
                   <form class="menu-form-search" action="https://echo.htmlacademy.ru/">
                     <div class="search-input-wrapper">
-                      <input class="search-input" placeholder="Поиск по сайту" name="search" id="search">
+                      <input class="search-input" placeholder="Поиск по сайту" name="search" id="search" required>
                       <button class="button-close" type="reset">
                         <span class="visually-hidden">Очистить форму</span>
                       </button>
@@ -112,7 +109,7 @@
                           </div>
                         </div>
                         <div class="login-buttons">
-                          <a class="button button-pink" href="#">Войти</a>
+                          <a class="button button-pink" type="submit" href="#">Войти</a>
                           <ul class="login-registration-list">
                             <li class="login-registration-item">
                               <a href="#" class="login-registration-link">Забыли пароль?</a>
@@ -146,7 +143,7 @@
                             <div class="cart-link-wrapper">
                               <a href="#" class="cart-link">
                                 <div class="cart-img">
-                                  <img src="./images/cart-product.png" alt="Шарик малинового мороженого.">
+                                  <img src="./images/cart-product.jpg" height="46" width="46" alt="Шарик малинового мороженого.">
                                 </div>
                                 <div class="cart-inem-about">
                                   Малинка
@@ -155,7 +152,7 @@
                               </a>
                               <span class="price">310 ₽</span>
                               <div class="close-button-wrapper">
-                                <button class=" button cart-close-button">
+                                <button class=" button cart-close-button" type="reset">
                                   <span class="visually-hidden">Закрыть</span>
                                 </button>
                               </div>
@@ -166,7 +163,7 @@
                             <div class="cart-link-wrapper">
                               <a href="#" class="cart-link">
                                 <div class="cart-img">
-                                  <img src="./images/cart-product-second.png" alt="Шарик мороженого голубого цвета.">
+                                  <img src="./images/cart-product-second.jpg" height="46" width="46" alt="Шарик мороженого голубого цвета.">
                                 </div>
                                 <div class="cart-inem-about">
                                   Бабл-гам
@@ -175,7 +172,7 @@
                               </a>
                               <span class="price">480 ₽</span>
                               <div class="close-button-wrapper">
-                                <button class="cart-close-button">
+                                <button class="cart-close-button" type="reset">
                                   <span class="visually-hidden">Закрыть</span>
                                 </button>
                               </div>
@@ -230,14 +227,15 @@
               <div class="fieldset-wrapper">
                 <div class="filter-price">
                   <div class="range-input-wrapper">
-
                     <h3 class="catalog-filter-title">Цена:</h3>
                     <div class="range-value-container" tabindex="100">
-                      <input type="text" class="range-value" value="100 ₽">
+                      <input name="min-price" placeholder="" type="number" class="range-value" value="100" required>
+                      <span class="range-text">₽</span>
                     </div>
                     <span class="dash">-</span>
                     <div class="range-value-container">
-                      <input type="text" class="range-value" value="500 ₽">
+                      <input name="max-price" placeholder="" type="number" class="range-value" value="500" required>
+                      <span class="range-text">₽</span>
                     </div>
                   </div>
                   <div class="range-block">
@@ -340,7 +338,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/raspberries.jpg" alt="Шарик малинового мороженого.">
+                  <img class="catalog-image" src="./images/raspberries.jpg" width="168" height="168" alt="Шарик малинового мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Малинка</h3>
               </a>
@@ -365,7 +363,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/pistachio.jpg" alt="Шарик фисташкового мороженого.">
+                  <img class="catalog-image" src="./images/pistachio.jpg" width="168" height="168" alt="Шарик фисташкового мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Фисташка</h3>
               </a>
@@ -390,7 +388,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/blueberry.jpg" alt="Шарик черничного мороженого.">
+                  <img class="catalog-image" src="./images/blueberry.jpg" width="168" height="168" alt="Шарик черничного мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Черника</h3>
               </a>
@@ -415,7 +413,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/bubble-gum.jpg" alt="Шарик мороженого со вкусом жвачки.">
+                  <img class="catalog-image" src="./images/bubble-gum.jpg" width="168" height="168" alt="Шарик мороженого со вкусом жвачки.">
                 </div>
                 <h3 class="catalog-item-title">Бабл-гам</h3>
               </a>
@@ -440,7 +438,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/blackberry.jpg" alt="Шарик ежевичного мороженого.">
+                  <img class="catalog-image" src="./images/catalog/blackberry.jpg" width="168" height="168" alt="Шарик ежевичного мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Ежевика</h3>
               </a>
@@ -465,7 +463,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/banana.jpg" alt="Шарик бананового мороженого.">
+                  <img class="catalog-image" src="./images/catalog/banana.jpg" width="168" height="168" alt="Шарик бананового мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Банан</h3>
               </a>
@@ -490,7 +488,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/chocolate.jpg" alt="Шарик шоколадного мороженого.">
+                  <img class="catalog-image" src="./images/catalog/chocolate.jpg" width="168" height="168" alt="Шарик шоколадного мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Шоколадка</h3>
               </a>
@@ -515,7 +513,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/strawberry.jpg" alt="Шарик клубничного мороженого.">
+                  <img class="catalog-image" src="./images/catalog/strawberry.jpg" width="168" height="168" alt="Шарик клубничного мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Клубничка</h3>
               </a>
@@ -540,7 +538,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/lemon.jpg" alt="Шарик лимонного мороженого.">
+                  <img class="catalog-image" src="./images/catalog/lemon.jpg" width="168" height="168" alt="Шарик лимонного мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Лимон</h3>
               </a>
@@ -565,7 +563,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/menthol.jpg" alt="Шарик мятного мороженого.">
+                  <img class="catalog-image" src="./images/catalog/menthol.jpg" width="168" height="168" alt="Шарик мятного мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Ментол</h3>
               </a>
@@ -590,7 +588,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/nut.jpg" alt="Шарик орехового мороженого.">
+                  <img class="catalog-image" src="./images/catalog/nut.jpg" width="168" height="168" alt="Шарик орехового мороженого.">
                 </div>
                 <h3 class="catalog-item-title">Орешек</h3>
               </a>
@@ -615,7 +613,7 @@
             <div class="card-wrapper">
               <a class="catalog-card-link" href="#">
                 <div class="catalog-img-wrapper">
-                  <img class="catalog-image" src="./images/catalog/сreme-brulee.jpg" alt="Шарик мороженого крем-брюле.">
+                  <img class="catalog-image" src="./images/catalog/сreme-brulee.jpg" width="168" height="168" alt="Шарик мороженого крем-брюле.">
                 </div>
                 <h3 class="catalog-item-title">Крем-брюле</h3>
               </a>
@@ -638,7 +636,7 @@
           </li>
         </ul>
         <div class="pagination-wrapper">
-          <button class="button button-slider button-pagination">Показать еще</button>
+          <button class="button button-slider button-pagination" type="button">Показать еще</button>
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-current">1</a>
