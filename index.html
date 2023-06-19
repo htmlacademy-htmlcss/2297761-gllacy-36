@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="icon" href="favicon.ico" type="image/ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
@@ -152,7 +153,7 @@
                               </a>
                               <span class="price">310 ₽</span>
                               <div class="close-button-wrapper">
-                                <button class=" button cart-close-button" type="reset">
+                                <button class=" button cart-close-button" type="button">
                                   <span class="visually-hidden">Закрыть</span>
                                 </button>
                               </div>
@@ -172,7 +173,7 @@
                               </a>
                               <span class="price">480 ₽</span>
                               <div class="close-button-wrapper">
-                                <button class="cart-close-button" type="reset">
+                                <button class="cart-close-button" type="button">
                                   <span class="visually-hidden">Закрыть</span>
                                 </button>
                               </div>
@@ -310,9 +311,7 @@
                 <h3 class="gift-title">Малинка даром!</h3>
                 <p class="gift-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
                   малинового варенья бесплатно.</p>
-                <a class="button button-slider" href="#">
-                  <span class="button-text">Хочу подарок</span>
-                </a>
+                <a class="button button-slider" href="#">Хочу подарок</a>
               </div>
             </li>
             <li class="gift-item">
@@ -344,7 +343,7 @@
                     <span class="card-price">310 ₽/кг</span>
                     <a class="button-cart" href="#">
                       <span class="visually-hidden catalog-cart">Корзина</span>
-                      <div class="cart-svg-wrapper">
+                      <div class="cart-svg-wrapper" tabindex="0">
                         <svg class="icon-svg-cart" width="16" height="17" viewBox="0 0 16 17" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -368,7 +367,7 @@
                     <span class="card-price">340 ₽/кг</span>
                     <a class="button-cart" href="#">
                       <span class="visually-hidden catalog-cart">Корзина</span>
-                      <div class="cart-svg-wrapper">
+                      <div class="cart-svg-wrapper" tabindex="0">
                         <svg class="icon-svg-cart" width="16" height="17" viewBox="0 0 16 17" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -392,7 +391,7 @@
                     <span class="card-price">330 ₽/кг</span>
                     <a class="button-cart" href="#">
                       <span class="visually-hidden catalog-cart">Корзина</span>
-                      <div class="cart-svg-wrapper">
+                      <div class="cart-svg-wrapper" tabindex="0">
                         <svg class="icon-svg-cart" width="16" height="17" viewBox="0 0 16 17" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -416,7 +415,7 @@
                     <span class="card-price">320 ₽/кг</span>
                     <a class="button-cart" href="#">
                       <span class="visually-hidden catalog-cart">Корзина</span>
-                      <div class="cart-svg-wrapper">
+                      <div class="cart-svg-wrapper" tabindex="0">
                         <svg class="icon-svg-cart" width="16" height="17" viewBox="0 0 16 17" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -501,12 +500,12 @@
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Введите дату</span>
                   </span>
-                  <input class="delivery-form-input input-date" type="date" id="date" name="delivery-date"
+                  <input class="form-input delivery-form-input input-date" type="date" id="date" name="delivery-date"
                     value="2020-04-01" required>
                 </p>
                 <p class="field-group delivery-form-phone">
                   <label class="form-label" for="phone">Телефон</label>
-                  <input class="delivery-form-input input-phone" type="tel" id="phone" name="phone"
+                  <input class="form-input delivery-form-input input-phone" type="tel" id="phone" name="phone"
                     value="+7 800 999-00-00" required>
                 </p>
               </div>
@@ -524,7 +523,7 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-adresse">Введите название улицы, дома и квартиры</span>
                   </span>
                 </span>
-                <input class="delivery-form-input input-adresse" type="text" name="adresse" id="adresse"
+                <input class="form-input delivery-form-input input-adresse" type="text" name="adresse" id="adresse"
                   value="ул. Большая Конюшенная, 19/8" required>
               </p>
               <div class="delivery-submit">
@@ -597,7 +596,7 @@
           <section class="copyright">
             <h2 class="visually-hidden">Логотип HTML-Академий</h2>
             <a class="footer-logo" href="https://htmlacademy.ru">
-              <svg class="logo-htmlacademy" width="93" height="27" viewBox="0 0 93 27" fill="none"
+              <svg class="logo-htmlacademy" tabindex="0" width="93" height="27" viewBox="0 0 93 27" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_25239_2387)">
                   <path d="M0 10.4163V12.4995H1.98768V10.4163H0Z" fill="#2D3440" />
@@ -649,7 +648,7 @@
       </footer>
       <div class="modal-container">
         <div class="modal modal-feedback">
-          <button class="modal-close-button" type="reset">
+          <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
